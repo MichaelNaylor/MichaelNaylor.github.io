@@ -1,0 +1,56 @@
+<html>
+	<head>
+	<!-- Title of the page, linked CSS files and fonts are included here -->
+		<title>Contact Me</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	</head>
+
+	<header> </header> 
+
+
+	<body> 
+
+		<div id="container">
+		<!-- This is the banner at the top center of the page-->
+			<header><img src="images/webbanner.png" alt="WML banner"></header>
+			<!-- This is the navigation bar with the twitch and contact options floating to the right side of the page-->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="latestVideos.html">Latest Videos</a></li>
+				<li><a href="Playlists.html">Playlists</a></li>
+				<ul style="float:right;list-style-type:none;">
+				<li><a href="twitch.html">Twitch</a></li>
+				<li><a class="active" href="ContactMe.html">Contact Me</a></li>
+			</ul>
+			</ul>
+				<!-- Text with alternate contact methods-->
+				<p>
+				Hello and welcome to my contact page. You can use the contact form below to email me. Alternatively you can comment on any of my YouTube videos, chat to me when I am live on <a href="twitch.html">Twitch</a></li>, or contact me on Twitter @whatmikelikesyt.
+				</p>
+				<!-- This is the contact form currently using a div for each field within the fomr, further fields can be added by adding a new div with a new label text area/checkbox as necessary-->
+				<div style="width: 250px; height: 340px; margin: 0 auto;">
+				<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+					<div class="row">
+						<label for="name">Your name:</label><br />
+						<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+					</div>
+					<div class="row">
+						<label for="email">Your email:</label><br />
+						<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+					</div>
+					<div class="row">
+						<label for="message">Your message:</label><br />
+						<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+					</div>
+					<input id="submit_button" type="submit" value="Send email" />
+				</form>
+				</div>
+				
+				
+		</div>
+
+
+	</body>
+</html>
