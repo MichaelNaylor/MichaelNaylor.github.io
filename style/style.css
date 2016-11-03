@@ -1,0 +1,253 @@
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li,
+table, caption, tr, th, td, article, aside, canvas, footer, header,
+menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+} /* css reset */
+
+body {
+	background-color: #333;
+    font-family: 'Itim', cursive;/* font for main body */
+}
+
+h1, p, h2, h3, img {
+    padding: 10px; /* adds some padding around these elements */
+}
+
+h1, h2, h3 {
+    text-align: center; /* centers the text within its container */
+}
+
+header {
+	width:100%;
+    background: #333;
+    border-bottom: 3px ridge;
+}
+
+footer {
+	width: 100%;
+	margin-left: auto;
+	text-align: center;
+    background: #333;
+    height: 110px;
+    border-top: 3px ridge;
+    clear: both;
+}
+
+#footerNav{
+	list-style-type: none; /* removes bullet points */
+	height:75px;
+    
+	
+}
+
+.footerLinks {
+	display: block;
+	float:left;
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+    color: white;
+    background: #333;
+}
+
+#container {
+	background-color: #085350;
+	margin-left: auto; /*places continer on right hand side of the page */
+    float: right; /*floats container to the right hand side so that left floating sidebar can be placed beside it */
+	Height: 95%;
+	width: 85%; 
+	color: white;
+    padding: 1px; /* fixes gap due to margin overflow betwen nav and container */
+}
+
+#sidebar {
+    float:left; /* floats to the left of the container */
+    font-family:  'Indie Flower', cursive;
+    width: 14.7%; /*slightly less than 15% gives room for the border */
+    background: #333;
+    color: white;
+}
+
+#sidebar h2 {
+    border: 3px inset; /*border around sidebar headings */
+}
+
+.sidebarLink {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    background: #085350;
+    border: 3px inset; /*border around sidebar links */
+    text-align: center; /* centers the text within its container */
+    padding: 14px 16px; /* gives some padding within each link */
+}
+
+.sidebarLink:hover{
+    background-color: black; /*changes nav link background when mouse hovers over */
+}
+
+.sidebarLink:focus {
+    background-color: black;/*changes nav link background when selected with tab key */
+}
+
+a {
+	color: #23A09B; /*sets text color for links */
+}
+
+#mainNav {
+    list-style-type: none;/* removes bullet points */
+    background-color: #333;
+}
+
+.nav {
+    display: block;
+    color: white;
+    text-align: center; /*centers text within its container */
+	font-size: 25px; /* sets font size of links used in nav class */
+    padding: 14px 16px; /*gives each link some padding */
+    text-decoration: none; /* removed underline from link text */
+	font-family: 'Indie Flower', cursive; /* gives nav class links this google font */
+	float: left; /*makes links float in order from left hand side */
+}
+
+.nav:hover {
+    background-color: black;/*changes nav link background when mouse hovers over */
+}
+
+.nav:focus {
+    background-color: black;/*changes nav link background when selected with tab key */
+}
+
+.active {
+    background-color: #085350; /*changes color of link for current page */
+}
+
+#profilePic {
+	width: 300px; /*sets image width*/
+	height: 280px;/*sets image height*/
+	float:left; /*floats picture to the left so text wraps around it*/
+    padding: 10px; /*gives padding to the picture*/
+    padding-left: 0px; /*removs padding from left had side as its container has a margin of 10px already on this side*/
+}
+
+#aboutMeText {
+	margin: 10px;/*gives a 10px margin all around this container*/     
+}
+
+#programmingSummary, #aboutMeText, #csfSummary, #webSummary, #programmingInfo, .pageIntro, #personalProjectsIntro, #CHCloneIntro {
+    border-bottom: 3px ridge; /*gives a bottob border after each of these sections to help break up the page*/
+}
+
+#siteBreadcrumbTrail {
+	margin: 10px; /*gives a margin between these links and other content*/
+}
+
+table{
+	border-collapse: collapse; /*collapses outer border in so only one border around each item */
+	width: 75%; /*sets table to only take up 75% of its container*/
+	margin-left: auto;
+    margin-right: auto;/*with about margin centers the table*/
+    margin-bottom: 10px;/*gives a 10px margin below the table before any other content*/
+}
+
+table, th, td{
+	border: 3px ridge; /*creates and styles bother around the table*/
+	
+}
+
+th, td {
+	padding: 10px; /*gives some padding in each cell*/
+}
+.tableList {
+	margin: 10px; /*gives some padding to list text so that it starts from within the cell*/
+}
+
+.socialMediaLinkPic {
+	width: 75px;
+	height: 75px;/*sets size of footer icons*/
+}
+
+@media only screen and (max-width: 480px) {
+    .nav, .footerLinks{ /*ovverides the css for each of the below elements for screen sizes under 480px*/
+        float:none;
+        font-size: 15px;
+    }
+    
+    #profilePic {
+	width:200px;
+	height:180px;
+    }
+    
+    .footerLinks{
+        float:left;
+        clear: left;
+    }
+    
+    #container {
+        width: 100%;
+        float:none;
+    }
+    
+    #sidebar {
+    clear: both;
+    float: none;
+    width: 100%;
+    }
+    
+    td, th, p {
+        font-size: 12px;
+    }
+    
+    footer{
+        height: 440px;
+        align-content: left;
+    }
+    
+    .footerText {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .nav, .footerLinks{/*overrides the css for the elements below for screen sizes under 850px*/
+        float:none;
+    }
+    
+    #profilePic {
+	width:200px;
+	height:180px;
+}
+    
+    .footerLinks{
+        float:left;
+        clear: left;
+    }
+    
+    td, th, p {
+        font-size: 14px;
+    }
+    
+    #container {
+        width: 100%;
+        float:none;
+    }
+    
+     #sidebar {
+    clear: both;
+    float: none;
+    width: 100%;
+    }   
+    
+    footer{
+        height: 330px;
+        align-content: left;
+    }
+    
+    .footerText {
+        display: block;
+        font-size: 20px;
+    }
+}

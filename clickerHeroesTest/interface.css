@@ -1,0 +1,150 @@
+#container {
+    background-color: #085350;
+	margin: auto;
+	Height: 100%;
+	width: 90%;
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+}
+
+#enemyDetails {
+	position: absolute;
+	right:50%;
+	top: 10%;
+}
+
+
+body {
+    background-color: #333;
+}
+
+#btnClick {
+    background-color: #278BA3; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+	border-radius: 12px;
+	width: 45%;
+	height: 60%;
+	margin: auto;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	
+}
+
+#btnClick:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#heroPurchase {
+	background-color: #278BA3; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+	border-radius: 12px;
+	width: 90px;
+	margin: auto;
+
+
+}
+
+#heroPurchase:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#enemyHealthPct{
+    
+    
+}
+
+#heroDisplay {
+	background-color: black;
+	Height: 60%;
+	width: 50%;
+	visibility: show;
+	overflow: scroll;
+	position: absolute;
+	bottom: 10px;
+}
+
+#bobTheAwesome {
+	background-color: grey;
+	Height: 250px;
+	width: 95%;
+	padding: 10px;
+}
+
+#cliveTheAlsoAwesome {
+	background-color: grey;
+	Height: 250px;
+	width: 95%;
+	padding: 10px;
+}
+
+#daveTheDangerNoodle {
+	background-color: grey;
+	Height: 250px;
+	width: 95%;
+	padding: 10px;
+}
+
+#bobUpg {
+	background-color: green; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+}
+
+#bobUpg:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#cliveUpg {
+	background-color: green; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+}
+
+#cliveUpg:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#daveUpg {
+	background-color: green; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+}
+
+#daveUpg:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+

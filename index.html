@@ -1,63 +1,178 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
+
     <head>
+        <meta charset="utf-8">
 
-	    <title>What Mike Likes Home Page</title>
-	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-	    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-	    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-		
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <title>Home</title>
 
-			ga('create', 'UA-84668839-1', 'auto');
-			ga('send', 'pageview');
-
-		</script>
-		
+        <link rel="stylesheet" type="text/css" href="style/style.css"/>	
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> <!-- font used in main nav bar-->
+        <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"><!-- font used in main body -->
     </head>
 
-    <header> </header> 
 
 
-    <body> 
-		
-	    <div id="container">
+    <body>
+        <header>
+            <nav>
+                <ul id="mainNav">
 
-			<header><img src="images/webbanner.png" alt="WML banner"></header>
+                    <li><a href="index.html" class="active nav" >Home</a></li>
+                    <li><a class="nav" href="units.html" >Unit Overview </a></li>
+                    <li><a class="nav" href="work_experiance.html">Work Experiance</a></li>
+                    <li><a class="nav" href="personal_projects.html">Personal Projects</a></li>
+                </ul>
+            </nav>
+        </header>
 
-			<ul>
-			<li><a class="active" href="http://www.whatmikelikes.tech/">Home</a></li>
-			<li><a href="currentProjects.html">Current Projects</a></li>
-			<li><a href="completedProjects.html">Completed Projects</a></li>
-			<ul style="float:right;list-style-type:none;">
-	    	<li><a href="blog.html">Blog</a></li>
-			</ul>
-			</ul>
-			<div  style=" float: left; width: 425px; height: 340px; margin: 10;  ">
-				<P>
-				Hello and welcome to my website. I am a student at Manchester Metropolitan University studying Computer Science. 
-				I created this website to showcase the projects that I am working on and to keep a running blog of my progress. 
-				</p>
-				
-				<p>
-				
-				</p> 
+        <div id="container">
 
-			</div>
-			<div style=" float: right; width: 425px; height: 340px; margin: 0 auto;  ">
-			<a class="twitter-timeline"  href="https://twitter.com/_WhatMikeLikes" data-widget-id="702157993291415552">Tweets by @_WhatMikeLikes</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-			</div>
-			
-		
-	    </div>
+            <nav id="siteBreadcrumbTrail">
+                <a href="index.html">Home</a>
+            </nav><!--end of breadcrumb trail nav-->	
+            
+            <section id="mainContent">
+
+                <h1> About Me </h1>
+
+                <article id="myInfo">
+
+                    <br />
+
+                    <div id="aboutMeText">
+                        <h2>My Information</h2>
+                        <img id="profilePic" src="http://i.imgur.com/ge2Y8m1.jpg" title="picture of me" alt="picture of me">
+                        <p>
+                            My name is Michael Naylor and I am currently studying towards a Computer Science Bsc at Manchester Metropolitan Univeristy.
+                            My first year is made up of 4 units Programming, Information Systems, Computer Systems Fundamentals and Introduction to Web Design.
+                            You can find more information about each unit and what I have been working on for each one on the <a href="units.html"> Unit Overview page </a>.
+                        </p>
+                        <br />
+
+                        <p>
+                            I also have 10 years experiance working in the customer service field. During these years I have worked in a vairety of positions in both 
+                            local government and the private sector, however each of them has been at least partially customer service based. You can see my full work 
+                            history on the <a href="work_experiance.html"> Work Experiance page </a>. You can also view my work history on my <a href="https://www.linkedin.com/in/michaelnaylor89?trk=nav_responsive_tab_profile">
+                            LinkedIn profile </a>.
+                        </p>
+                        <br />
+
+                        <p>
+                            Prior to starting my degree I completed a HNC in Computing and Systems development and received a Distinction overall. I have included a brief 
+                            description of each unit and the grade I received for each in the table below.
+                        </p>
+                        <br />
+                    </div> <!-- end of about me text div -->
+                    <br />
+                    <h2>HNC grades Achieved</h2>
+                    <table id="hncDetails">
+                        <tr>
+                            <th>Unit</th>
+                            <th>Description</th>
+                            <th>Grade</th>
+                        </tr> <!--table header-->
+
+                        <tr>
+                            <td>Object Oriented Programming: Java</td>
+                            <td>Create a 4 function calculator in Java using the NetBeans IDE. Write a report on the process of designing and 
+                                creating the program.</td>
+                            <td>Distinction</td>
+                        </tr><!--row 1-->
+
+                        <tr>
+                            <td>Systems Analysis and Design</td>
+                            <td>Create a database system for a ski school in SQL and Microsoft Access. Create an entity relationship diagram for the system and write a 
+                                report explaining the design decisions. Produce a user manual for the system and create entry forms for staff to enter data and prduce reports.</td>
+                            <td>Merit</td>
+                        </tr><!--row 2-->
+
+                        <tr>
+                            <td>Digital Image Creation</td>
+                            <td>Produce an album cover for a band of your choice. Produce a 4 page booklet to go inside the CD case with images relevent to the band or style of music.
+                                each image must be original taken with personal camera or created in Adobe Photoshop.Produce a report explaing your desing choices and an explanatiion
+                                of each image and the tools used to create it.</td>
+                            <td>Merit</td>
+                        </tr><!--row 3-->
+
+                        <tr>
+                            <td>Web Development</td>
+                            <td>Produce a report on web accessibility and usability considerations when creating a new website. Create a 4 page website on any topic. Include links to 
+                                external websites, images and embedded video on at least 1 page. Create a report on the website creation including a user guide for a new developer taking 
+                                over the webste.</td>
+                            <td>Distinction</td>
+                        </tr><!--row 4-->
+
+                        <tr>
+                            <td>Computer Systems</td>
+                            <td>Produce a reports on key components such as the CPU, GPU, motherboard and peripherals etc work in modern computer systems. Talk about the different types of 
+                                each and design a bespoke system that fits all of the users critera and is within budget for 2 case studies.</td>
+                            <td>Distinction</td>
+                        </tr><!--row 5-->
+
+                        <tr>
+                            <td>Networking</td>
+                            <td>Produce a report on the different types of networks and their usage. Design a network for the case study provided and use Packet tracer to show how this network
+                                will operate. Produce a small report justifying your choices in creating the network and offer at least 1 alternative network design.</td>
+                            <td>Distinction</td>
+                        </tr><!--row 6-->
+
+                        <tr>
+                            <td>Employability and Professional Development</td>
+                            <td>Create a persnal PDP at the start of the year. Perform a SWOT anylysis on yourself. Reflect on this PDP at the end of the year and comment on what progess you have/have not made. Produce a new PDP
+                                with goals for next year based on this. </td>
+                            <td>Pass</td>
+                        </tr><!--row 7-->
+
+                        <tr>
+                            <td>Business Skills for E-Commerce</td>
+                            <td>Produce a report with a brief histoty of e-commerce sites, their impact on business, their impact on society and provide at least 3 examples of successful e-commerce sites.
+                                Produce an e-commerce system design for the company in the case study provided. Justify your design in a report and explain the potential impact on the business.</td>
+                            <td>Pass</td>
+                        </tr><!--row 8-->
+
+                    </table> <!--end of hncDetails table -->
+                </article> <!-- end peronal info article-->
 
 
 
+            </section> <!-- end main content section-->
+            
 
+        </div> <!-- end container div-->
+
+        <nav id="sidebar">
+            <h2>Software I am using</h2> 
+
+            <ul class="sidebarNav">
+                <li><a class="sidebarLink" href="https://processing.org">Processing</a></li>
+                <li><a class="sidebarLink" href="https://eclipse.org/downloads/">Eclipse</a></li>
+                <li><a class="sidebarLink" href="http://brackets.io/">Brackets</a></li>
+                <li><a class="sidebarLink" href="https://www.visual-paradigm.com/">Visual Paradigm</a></li>
+                <li><a class="sidebarLink" href="https://sourceforge.net/projects/circuit/">Logisim</a></li>
+            </ul>
+
+            <h2>Resources</h2>
+
+            <ul class="sidebarNav">
+                <li><a class="sidebarLink" href="http://www.w3schools.com/">W3 Schools</a></li>
+                <li><a class="sidebarLink" href="https://www.lynda.com/">Lynda.com</a></li>
+                <li><a class="sidebarLink" href="https://pages.github.com/">GitHub Hosting</a></li>
+                <li><a class="sidebarLink" href="http://paletton.com/">Paletton</a></li>
+            </ul>
+
+        </nav>
+        
+        <footer>
+            <ul id="footerNav">
+                <li class="footerLinks"><a href="https://twitter.com/_WhatMikeLikes"><img src="http://i.imgur.com/Y8SPVdr.png" title="Twitter link Image" alt="Twitter link image" class="socialMediaLinkPic"></a>Follow Me on Twitter</li>
+                <li class="footerLinks"><a href="https://www.facebook.com/mnaylor89"><img src="http://i.imgur.com/2yTxpRe.png" title="Facebook link image" alt="Facebook link image" class="socialMediaLinkPic"></a>Find me on Facebook</li>
+                <li class="footerLinks"><a href="https://www.linkedin.com/in/michaelnaylor89"><img src="http://i.imgur.com/JmEJxJT.png" title="LinkedIn link image" alt="LinkedIn link image" class="socialMediaLinkPic"></a>Connect with me on LinkedIn</li>
+            </ul>
+        </footer>
     </body>
+
+
+
 </html>

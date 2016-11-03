@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Programming</title>
+
+        <link rel="stylesheet" type="text/css" href="style/style.css"/>	
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> <!-- font used in main nav bar-->
+        <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet"><!-- font used in main body -->
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+
+                <ul id="mainNav">
+
+                    <li><a class="nav" href="index.html" >Home</a></li>
+                    <li><a class="nav" href="units.html" >Unit Overview</a></li>
+                    <li><a class="nav" href="work_experiance.html" >Work Experiance</a></li>
+                    <li><a class="nav" href="personal_projects.html">Personal Projects</a></li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+        <div id="container">
+            
+            <nav id="siteBreadcrumbTrail">
+                <a href="index.html">Home</a> > <a href="units.html">Unit Overview</a> > <a href="programming.html">Programming</a>
+            </nav><!--end of breadcrumb trail nav-->
+
+
+            <section id="mainContent">
+                <h1>Programming Unit </h1>
+                
+                <br />
+
+                <article id="programmingInfo">
+                
+                <h2>About this unit</h2>
+                <br />
+                <p>
+                    In the first year during this unit I will be uning the Java programming language. Java is an object oriented language that can 
+                    be used on almost any operating system that contains a run time enviroment for it. Due to its usage of a run time enviroment 
+                    Java programmes can be compiled once and then run anywhere, instead of being re-compiled for each machine that they need to 
+                    run on. 
+                </p>
+                <br />
+                <p>
+                    During the first few weeks of this unit we are using a grapical IDE called Processing. Processing has its own built in library
+                    which can help to make writing code faster as a lot of code is already written for you and ready to use within the IDE. Processing 
+                    is an open source program that is free to use. The IDE can be downloaded from <a href="http://www,processing.org">processing.org</a>.
+                    The website also contains a lot of tutorials showing how to use the IDE, help with the Java language and it has a forum through which
+                    users can talk to each other and ask for help.
+                </p>
+                <br />
+                <p>
+                    After the first few weeks when we are more familiar with the core concepts of the Java language we will move onto a widely used professional
+                    IDE called Eclipse. Eclipse is used by Java developers all over the world and like Processing it is open source and free to use. Eclipse can 
+                    be downloaded from <a href="https://eclipse.org/downloads/">eclipse.org </a>. Unlike Processing Eclipse does not come with its own extensive 
+                    library, however it is possible to inport the processing library and many others into your Eclipse projects. 
+                </p>
+                <br />
+                </article><!--end of programming info article-->
+
+            <article id="portfolioPieces">
+                <h2>Portfolio Pieces</h2>
+
+                <br />
+
+                <p>
+                    In my programming unit 50% of this final grade is made up of portfolio pieces. I am set a new portfolio piece each fortnight and will display
+                    the end result and provide a link to the code for each below.
+                </p>
+
+                <br />
+                <h3>Procedurally drawn monster</h3>
+                <br />
+
+                <p>
+                    In this task I needed to draw a monster face using procedures. This was achived by creating a procedure to draw each element of the face and then a final procedure to position each of these elements. This procedure can then be called in setup or draw and passes position and size paramaters to draw the face. The end result is shown in the image below and you can view the code I used in my 
+                    <a href ="https://github.com/MichaelNaylor89/Programming-portfolio-pieces/blob/master/Procedural%20monster%20drawing.pde">GitHub repository.</a>
+                </p>
+
+                <br />
+
+                <img src="http://i.imgur.com/vcxQ5CS.png" alt="Procedural Monster Image" title="Procedurally drawn monsters in Java" style="width:304px;height:228px;">
+
+                <br />
+
+                <h3>Pong Game</h3>
+                <br />
+                <p>
+                    In this task I was asked to create a pong style game. This was to consist of a movable bat on the left hand side of the screen controlled by the
+                    player and a ball that would move continously around the screen. Hitting any of the top, bottom and right hand sides will cause the ball to bounce
+                    back however the ball will leave the screen via the left side unless it hits the bat. The objectve of the game is to keep the ball in the playing area
+                    for as long as possible. The ball speeds up each time it hits the bat to make the game harder, and each hit increases the score by 1. You can view the 
+                    code for this project in my <a href="https://github.com/MichaelNaylor89/Programming-portfolio-pieces/blob/master/pong_game.pde"> GitHub repository</a>.
+                </p>
+                <br />
+                <img src="http://i.imgur.com/AJbohRg.png" alt="Image of pong game" title="Image of pong game made in processing" style="width:304px;height:228px;">
+
+            </article><!--end of portfolio pieces div -->	
+
+
+            </section> <!-- end main content section -->
+
+        </div> <!--end container div-->
+        
+        <nav id="sidebar">
+            <h2>Software I am using</h2> 
+
+            <ul class="sidebarNav">
+                <li><a class="sidebarLink" href="https://processing.org">Processing</a></li>
+                <li><a class="sidebarLink" href="https://eclipse.org/downloads/">Eclipse</a></li>
+                <li><a class="sidebarLink" href="http://brackets.io/">Brackets</a></li>
+                <li><a class="sidebarLink" href="https://www.visual-paradigm.com/">Visual Paradigm</a></li>
+                <li><a class="sidebarLink" href="https://sourceforge.net/projects/circuit/">Logisim</a></li>
+            </ul>
+
+            <h2>Resources</h2>
+
+            <ul class="sidebarNav">
+                <li><a class="sidebarLink" href="http://www.w3schools.com/">W3 Schools</a></li>
+                <li><a class="sidebarLink" href="https://www.lynda.com/">Lynda.com</a></li>
+                <li><a class="sidebarLink" href="https://pages.github.com/">GitHub Hosting</a></li>
+                <li><a class="sidebarLink" href="http://paletton.com/">Paletton</a></li>
+            </ul>
+
+        </nav>
+        
+    <footer>
+        <ul id="footerNav">
+            <li class="footerLinks"><a href="https://twitter.com/_WhatMikeLikes"><img src="http://i.imgur.com/Y8SPVdr.png" title="Twitter link Image" alt="Twitter link image" class="socialMediaLinkPic"></a>Follow Me on Twitter</li>
+            <li class="footerLinks"><a href="https://www.facebook.com/mnaylor89"><img src="http://i.imgur.com/2yTxpRe.png" title="Facebook link image" alt="Facebook link image" class="socialMediaLinkPic"></a>Find me on Facebook</li>
+            <li class="footerLinks"><a href="https://www.linkedin.com/in/michaelnaylor89"><img src="http://i.imgur.com/JmEJxJT.png" title="LinkedIn link image" alt="LinkedIn link image" class="socialMediaLinkPic"></a>Connect with me on LinkedIn</li>
+        </ul>
+    </footer>
+
+    </body>
+
+</html>

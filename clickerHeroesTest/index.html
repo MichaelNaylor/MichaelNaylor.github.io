@@ -1,0 +1,114 @@
+<html>
+
+	<head>
+		<title> Clicker Heroes test </title>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+		<script type="text/javascript" src="main.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	
+	<body>
+	
+		<div id="container">
+		
+			<div id="levelDisplay">
+				Level: <span id="currentLevel">1</span>
+				<br />
+				Stage: <span id="currentStage">1</span>/<span id="maxStage">10</span>
+			</div>
+			<br />
+		
+			<div id="enemyDetails">
+				Enemy health: <span id="currentEnemyHealth">10</span>/<span id="maxEnemyHealth">10</span>
+				<progress id="enemyHealthPct" value="10" max="10"></progress>
+			</div>
+			
+			<br />
+			<br />
+			
+			<div id="resourceDisplay">
+				Gold: <span id="currentGold">0</span>
+				
+			</div>
+			
+			<div id="damageDisplay">
+				Click Damage: <span id="totalClickPower">1</span>
+				<br />
+				DPS: <span id="dpsDisplay">0</span>
+			</div>
+			
+			<br />
+			
+			<div id="attackButtons">
+				<button title="Click to attack" id="btnClick" onclick="clickAttack(1)">Click to Attack</button>
+				
+			</div>
+			
+			<br />
+			
+
+			
+			<div id="heroDisplay">
+				<div id="bobTheAwesome">
+					<h3> Bob The Awesome </h3>				
+					Level:<span id="heroLevelBob">0</span> <br />
+					Cost:<span id="levelBobCost">5</span>Gold
+					<br />
+					<br />
+					<button title="Increase Bob The Awesome's level by 1" id="heroPurchase" onclick="bobLevelUp()">Purchase 1 level</button>
+					<br />
+					<br />
+					<div id="bobUpgDiv">
+						<button title="increade bob damage by 100%" id="bobUpg" onclick="buyBobUpg1()"></button>
+						<button title="increade bob damage by 100%" id="bobUpg" onclick="buyBobUpg2()"></button>
+						<button title="increade bob damage by 100%" id="bobUpg" onclick="buyBobUpg3()"></button>
+						<button title="increade bob damage by 100%" id="bobUpg" onclick="buyBobUpg4()"></button>
+						<button title="increade bob damage by 100%" id="bobUpg" onclick="buyBobUpg5()"></button>
+					</div>
+				</div>
+				
+				<br / >
+				
+				<div id="cliveTheAlsoAwesome">
+					<h3> Clive the Also Awesome </h3>				
+					Level:<span id="heroLevelClive">0</span> <br />
+					Cost:<span id="levelCliveCost">10</span>Gold
+					<br />
+					<br />
+					<button title="Increase Clive The Also Awesome's level by 1" id="heroPurchase" onclick="cliveLevelUp()">Purchase 1 level</button>
+					<br />
+					<br />
+					<button title="increade Clive damage by 100%" id="cliveUpg" onclick="buyCliveUpg1()"></button>
+					<button title="increade Clive damage by 100%" id="cliveUpg" onclick="buyCliveUpg2()"></button>
+					<button title="increade Clive damage by 100%" id="cliveUpg" onclick="buyCliveUpg3()"></button>
+					<button title="increade Clive damage by 100%" id="cliveUpg" onclick="buyCliveUpg4()"></button>
+					<button title="increade Clive damage by 100%" id="cliveUpg" onclick="buyCliveUpg5()"></button>
+			
+				</div>		
+
+				<br / >
+				
+				<div id="daveTheDangerNoodle">
+					<h3> Dave the Danger Noodle </h3>				
+					Level:<span id="heroLevelDave">0</span> <br />
+					Cost:<span id="levelDaveCost">100</span>Gold
+					<br />
+					<br />
+					<button title="Increase Dave the Danger Noodle's level by 1" id="heroPurchase" onclick="daveLevelUp()">Purchase 1 level</button>
+					<br />
+					<br />
+					<button title="increade Dave damage by 100%" id="daveUpg" onclick="buyDaveUpg1()"></button>
+					<button title="increade Dave damage by 100%" id="daveUpg" onclick="buyDaveUpg2()"></button>
+					<button title="increade Dave damage by 100%" id="daveUpg" onclick="buyDaveUpg3()"></button>
+					<button title="increade Dave damage by 100%" id="daveUpg" onclick="buyDaveUpg4()"></button>
+					<button title="increade Dave damage by 100%" id="daveUpg" onclick="buyDaveUpg5()"></button>
+			
+				</div>					
+			</div>
+		</div>
+		
+		
+	</body>
+	
+</html>
